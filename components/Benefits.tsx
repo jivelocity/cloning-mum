@@ -8,8 +8,8 @@ import grid from "@/assets/images/grid.webp";
 
 const Benefits = () => {
   return (
-    <Container id="benefits" className="mt-28 flex justify-center items-center">
-        <div className="grid grid-cols-1 auto-rows-min sm:grid-cols-2 lg:grid-rows-4 gap-4 max-w-7xl w-full">
+    <Container id="benefits" className="pt-28 flex justify-center items-center">
+        <div className="grid grid-cols-1 auto-rows-min sm:grid-cols-2 lg:grid-rows-4 gap-4 max-w-7xl w-full ">
             <div className=" w-full h-full py-6 rounded-md sm:col-span-2 lg:col-span-1 ">
                 <div className="flex flex-col w-full h-full justify-center items-center lg:items-start ">
                     <p className="text-sm font-semibold text-stone-600 uppercase mb-4">DESIGN WITH BENEFITS</p>

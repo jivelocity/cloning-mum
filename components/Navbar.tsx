@@ -9,6 +9,7 @@ import NavLink from "@/components/ui/NavLink";
 import Button from "@/components/ui/Button";
 import { HashLink } from "react-router-hash-link";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
 
 const menus = [
     {
@@ -33,15 +34,15 @@ const Navbar = () => {
   return (
     <div className="fixed w-full inset-x-0 z-50">
         <div className="w-full relative">
-            <Container className="py-4 flex justify-between items-center absolute inset-x-0 bg-background/20 backdrop-blur ">
-                <HashLink smooth to={'#hero'}>
+            <Container className="py-6 md:py-4 flex justify-between items-center absolute inset-x-0 bg-background/20 backdrop-blur ">
+                <Link  href={'/#hero'}>
                     <Image
                         src={logo}
                         alt="MUM Studio"
                         width={80}
                         height={80}
                     />
-                </HashLink>
+                </Link>
                 <div className="space-x-12 items-center hidden md:flex ">
                     {menus.map((menu) => (
                         <NavLink key={menu.id} label={menu.label} id={menu.id}/>
@@ -54,9 +55,7 @@ const Navbar = () => {
                 <div className="flex md:hidden">
                     <Sheet>
                         <SheetTrigger>
-                            <Button secondary>
-                                <Menu size={20}/>
-                            </Button>
+                                <Menu size={25}/>
                         </SheetTrigger>
                         <SheetContent className="border-none">
                             <SheetClose asChild>

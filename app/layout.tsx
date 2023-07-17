@@ -27,13 +27,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <BrowserRouter>
-        <html lang="en">
-          <body className={` ${noir.variable} ${figtree.variable} font-figtree bg-background text-primary`}>
+        <html lang="en" >
+          <body  className={` ${noir.variable} ${figtree.variable} scroll-smooth font-figtree bg-background text-primary`}>
             <Navbar/>
             {children}
           </body>
         </html>
-    </BrowserRouter>
   )
 }

@@ -71,7 +71,6 @@ const variantGradientSecondary ={
 
     return(
 
-            <AnimatePresence >
                 <button
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
@@ -106,7 +105,6 @@ const variantGradientSecondary ={
                     {fill}
                     <div className='z-[1] flex flex-nowrap gap-2 items-center'>{children}</div>
                 </button>
-            </AnimatePresence>
     )
 })
 
