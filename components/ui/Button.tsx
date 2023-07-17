@@ -9,8 +9,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     secondary?: boolean
 }
 
-
-
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
     children,
     className,
@@ -40,24 +38,6 @@ const variantGradientSecondary ={
         background: ['radial-gradient(25% 50% at 50% 100% , rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)','radial-gradient(25% 50% at 0% 50%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)' ,'radial-gradient(25% 50% at 50% 0%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)','radial-gradient(25% 50% at 100% 50%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)','radial-gradient(25% 50% at 50% 100%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)']
     }
 }
-
-
-// const x = useMotionValue(50)
-// const y = useMotionValue(100)
-
-// useAnimationFrame((t) => {
-//     const angle = (t / 4000) * Math.PI * 2;
-//     const radius = 50;
-//     const xValue = Math.cos(angle) * radius;
-//     const yValue = Math.sin(angle) * radius;
-//     x.set(xValue);
-//     y.set(yValue);
-
-// });
-
-// const newY = useTransform(y, [-50, 50], [0, 100]);
-// const newX = useTransform(x, [-50, 50], [0, 100]);
-
 
     const glow =
         <motion.div className='absolute inset-[1px] z-[0] rounded blur'
