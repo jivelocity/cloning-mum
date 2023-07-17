@@ -73,7 +73,7 @@ const Works = () => {
   const activeWork = works.find((work) => work.id === activeTab);
 
   return (
-    <Container className="mt-20 flex justify-center items-center w-full">
+    <Container id="recent-projects" className="mt-20 flex justify-center items-center w-full">
         <div className="w-full max-w-7xl">
             <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center w-full">
                 <div className="flex flex-col w-full lg:w-1/3">
@@ -82,8 +82,8 @@ const Works = () => {
                 </div>
 
                 <div className="mt-6 gap-4 xl:gap-4 lg:mt-0 w-full lg:w-2/3 grid grid-cols-2 grid-rows-2 md:flex md:justify-center lg:justify-end">
-                    {works.map((work) => (
-                        <div onClick={() => setActiveTab(work.id)} className={
+                    {works.map((work,id) => (
+                        <div key={id} onClick={() => setActiveTab(work.id)} className={
                             `flex items-center flex-col relative md:border-none p-2 rounded cursor-pointer`
                         }>
                             {activeTab === work.id &&
@@ -111,7 +111,9 @@ const Works = () => {
                 </div>
 
             </div>
-            <div className="flex justify-center items-center w-full h-full mt-6 md:mt-10 ">
+            <div
+                className="flex justify-center items-center w-full h-full mt-6 md:mt-10 "
+            >
                 <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-9 md:grid-rows-5 w-full gap-4 ">
                     <div className=" relative col-span-2 row-span-2 md:col-span-6 md:row-span-3 rounded h-[244px] md:h-[424px]">
                         <video autoPlay loop muted src={activeWork?.gridOne} className="rounded absolute w-full h-full object-cover" ></video>

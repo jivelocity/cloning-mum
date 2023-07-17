@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Plans = () => {
   return (
-    <Container className="mt-20 bg-[#12120E] rounded-md pb-16 pt-16 flex justify-center">
+    <Container id="plans" className="mt-20 bg-[#12120E] rounded-md pb-16 pt-16 flex justify-center">
         <div className="max-w-7xl w-full ">
             <div className="flex w-full flex-col items-center">
                 <p className="text-sm font-semibold text-stone-600 uppercase mb-2 md:mb-4 text-center lg:text-start">

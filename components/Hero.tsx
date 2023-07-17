@@ -8,8 +8,8 @@ import { AnimatePresence } from "framer-motion";
 const Hero = () => {
   return (
     <AnimatePresence>
-        <Container>
-           <section className="flex flex-col gap-12 md:gap-14 justify-center items-center w-full min-h-fit mt-28 mb-16">
+        <Container id="hero">
+           <section className="flex flex-col gap-12 md:gap-14 justify-center items-center w-full min-h-fit pt-40 mb-16">
                 <div className="flex flex-col justify-center items-center gap-6 md:gap-12">
                     <h1 className="text-center text-5xl md:text-7xl">
                         The creative agency

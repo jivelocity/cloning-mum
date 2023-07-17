@@ -1,11 +1,11 @@
 import Benefits from "@/components/Benefits";
 import CTA from "@/components/CTA";
-import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
 import ImageMarquee from "@/components/ImageMarquee";
 import Marquee from "@/components/Marquee";
 import Plans from "@/components/Plans";
 import Works from "@/components/Works";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (

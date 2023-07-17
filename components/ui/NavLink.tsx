@@ -1,4 +1,6 @@
-import Link from "next/link";
+'use client'
+
+import { HashLink } from "react-router-hash-link";
 
 interface NavLinkProps {
     label: string,
@@ -11,11 +13,11 @@ const NavLink:React.FC<NavLinkProps> = ({
 }) => {
 
     return (
-        <Link href={id}>
-            <p className="text-stone-400 hover:text-primary font-semibold transition-colors ease-in-out duration-300">
+        <HashLink smooth to={`#${id}`}>
+            <button className="text-stone-400 hover:text-primary font-semibold transition-colors ease-in-out duration-300">
                 {label}
-            </p>
-        </Link>
+            </button>
+        </HashLink>
     )
 }
 export default NavLink;
