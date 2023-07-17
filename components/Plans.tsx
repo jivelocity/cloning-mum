@@ -45,7 +45,7 @@ const Plans = () => {
                     <div className="h-[1px] w-full my-8 bg-stone-800"/>
                     <div>
                         <h1 className="font-semibold mb-4">
-                            What's included
+                            What&apos;s included
                         </h1>
                         <ul className="flex flex-col gap-2 text-sm xl:text-base">
                             <li className="flex gap-3 items-center">
@@ -96,7 +96,7 @@ const Plans = () => {
                     <div className="h-[1px] w-full my-8 bg-stone-800"/>
                     <div>
                         <h1 className="font-semibold mb-4">
-                            What's included
+                            What&apos;s included
                         </h1>
                         <ul className="flex flex-col gap-2 text-sm xl:text-base">
                             <li className="flex gap-3 items-center">
@@ -126,7 +126,7 @@ const Plans = () => {
                     <div className="w-full h-full absolute z-[1] rounded p-6 lg:p-8 flex flex-col md:flex-row justify-end md:justify-between md:items-center xl:justify-end xl:flex-col gap-6">
                         <div>
                             <h1 className="text-2xl font-bold ">
-                                Wondering if it's right for you?
+                                Wondering if it&apos;s right for you?
                             </h1>
                             <p className="text-stone-300 leading-tight mt-2 text-sm xl:text-base max-w-xs">
                                 Learn more about how MUM Studio works and how it can benefit you.
