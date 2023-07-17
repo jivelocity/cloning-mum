@@ -34,7 +34,7 @@ const Benefits = () => {
                         </div>
                         <div className="w-full h-1/3 pt-8 flex flex-col justify-between xl:text-lg max-w-md">
                             <p className="text-stone-300">
-                                Review and approve each design with ease using Figma's benefits. Anytime, anywhere.
+                                Review and approve each design with ease using Figma&apos;s benefits. Anytime, anywhere.
                             </p>
                             <p className="xl:text-sm text-xs text-stone-600 font-semibold uppercase">
                                 Powered by Figma
