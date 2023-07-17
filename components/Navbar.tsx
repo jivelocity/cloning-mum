@@ -7,9 +7,9 @@ import logo from "@/assets/images/logo.webp";
 import Container from "@/components/ui/Container";
 import NavLink from "@/components/ui/NavLink";
 import Button from "@/components/ui/Button";
-import { HashLink } from "react-router-hash-link";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
+import { onGotoElement } from "@/lib/utils";
 
 const menus = [
     {
@@ -35,14 +35,14 @@ const Navbar = () => {
     <div className="fixed w-full inset-x-0 z-50">
         <div className="w-full relative">
             <Container className="py-6 md:py-4 flex justify-between items-center absolute inset-x-0 bg-background/20 backdrop-blur ">
-                <Link  href={'/#hero'}>
+                <div className="cursor-pointer" onClick={() => onGotoElement('hero')}>
                     <Image
                         src={logo}
                         alt="MUM Studio"
                         width={80}
                         height={80}
                     />
-                </Link>
+                </div>
                 <div className="space-x-12 items-center hidden md:flex ">
                     {menus.map((menu) => (
                         <NavLink key={menu.id} label={menu.label} id={menu.id}/>

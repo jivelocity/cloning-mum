@@ -73,7 +73,7 @@ const Works = () => {
   const activeWork = works.find((work) => work.id === activeTab);
 
   return (
-    <Container id="recent-projects" className="mt-20 flex justify-center items-center w-full">
+    <Container id="recent-projects" className="pt-20 flex justify-center items-center w-full">
         <div className="w-full max-w-7xl">
             <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center w-full">
                 <div className="flex flex-col w-full lg:w-1/3">

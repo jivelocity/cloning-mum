@@ -1,5 +1,6 @@
 'use client'
 
+import { onGotoElement } from "@/lib/utils";
 import Link from "next/link";
 
 interface NavLinkProps {
@@ -13,11 +14,9 @@ const NavLink:React.FC<NavLinkProps> = ({
 }) => {
 
     return (
-        <Link href={`#${id}`}>
-            <p className="text-stone-400 hover:text-primary font-semibold transition-colors ease-in-out duration-300">
+            <button onClick={() => onGotoElement(id)} className="text-stone-400 hover:text-primary font-semibold transition-colors ease-in-out duration-300">
                 {label}
-            </p>
-        </Link>
+            </button>
     )
 }
 export default NavLink;

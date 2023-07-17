@@ -24,7 +24,7 @@ const Faq = () => {
     ]
 
   return (
-    <Container id="faq" className="max-w-7xl flex flex-col justify-center w-full my-16">
+    <Container id="faq" className="max-w-7xl flex flex-col justify-center w-full py-16">
       <div className="flex flex-col justify-center items-center">
         <p className="text-sm font-semibold text-stone-600 uppercase mb-4">faq</p>
         <h1 className="text-primary text-3xl text-center">
